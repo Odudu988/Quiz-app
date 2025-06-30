@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: lightgray;
+    height: 45em;
+    transition: 0.3s;
+    color: #333;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px lightblue;
+    text-align: center;
+  }
+
+  body.dark .container{
+    background: #1e1e1e;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #theme {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: dimgray;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  #restart {
+     margin-top: 15px;
+    padding: 10px 20px;
+    background: dimgray;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  #answers button {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: lightslategrey;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #answers button:hover {
+    background-color: darkslategrey;
+  }
+
+  #answers button.correct {
+    background-color: green;
+  }
+
+  #answers button.wrong {
+    background-color: red;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  #feedback {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  #restart {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  #progress {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: grey;
+  }
+
+  #timer {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: dimgray;
+  }
